@@ -1,0 +1,2 @@
+- name: Push pre-built JavaScript / TypeScript / Docker container GitHub Action
+  uses: satackey/push-prebuilt-action@v0.1.1
