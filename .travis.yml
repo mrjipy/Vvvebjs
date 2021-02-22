@@ -1,8 +1,21 @@
-language: java
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: SHA256:4GxfkdRTzyzxQXBoDwKdr7XWFniNSnqTUTvE/ukPVQk  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
+{
+  "language": "java",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "deploy": [
+    {
+      "provider": "pages",
+      "strategy": "git",
+      "skip_cleanup": true,
+      "keep_history": true,
+      "on": {
+        "branch": [
+          "main"
+        ]
+      },
+      "token": "SHA256:4GxfkdRTzyzxQXBoDwKdr7XWFniNSnqTUTvE/ukPVQk"
+    }
+  ]
+}
